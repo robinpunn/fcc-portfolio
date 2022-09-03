@@ -1,7 +1,7 @@
 :root {
     --main-white: #f0f0f0;
-    --main-red: #f04908;
-    --main-blue: #d1ff04;
+    --main-purple: #9400d8;
+    --main-green: #068317;
     --main-gray: #4f5964;
 }
 
@@ -45,7 +45,6 @@
   }
   
   /* Base styles */
-  
   body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem; /* 18px */
@@ -62,11 +61,11 @@
   }
   
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   
   h2 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
   }
   
   ul {
@@ -84,7 +83,6 @@
   }
   
   /* nav */
-  
   .nav {
     display: flex;
     justify-content: flex-end;
@@ -92,7 +90,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-red);
+    background: var(--main-purple);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
   }
@@ -119,11 +117,10 @@
   }
   
   .nav-list a:hover {
-    background: var(--main-blue);
+    background: var(--main-green);
   }
   
   /* Welcome section */
-  
   .welcome-section {
     display: flex;
     flex-direction: column;
@@ -132,22 +129,24 @@
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient(62deg, #7eff7a 0%, #9d60da 100%);
   }
   
   .welcome-section > p {
     font-size: 3rem;
-    font-weight: 200;
-    font-style: italic;
-    color: var(--main-red);
+    font-weight: 400;
+    color: var(--main-purple);
   }
   
+  span {
+    color: var(--main-purple);
+  }
+
   /* Projects section */
-  
   .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background: var(--main-green);
   }
   
   .projects-section-header {
@@ -222,7 +221,7 @@
   }
   
   .btn-show-all:hover {
-    background: var(--main-red);
+    background: var(--main-purple);
   }
   
   .btn-show-all:hover > i {
@@ -236,7 +235,6 @@
   }
   
   /* Contact section */
-  
   .contact-section {
     display: flex;
     flex-direction: column;
@@ -283,14 +281,13 @@
   }
   
   /* Footer */
-  
   footer {
     font-weight: 300;
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
     background: var(--main-gray);
-    border-top: 4px solid var(--main-red);
+    border-top: 4px solid var(--main-purple);
   }
   
   footer > p {
