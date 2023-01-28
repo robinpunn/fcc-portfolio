@@ -1,93 +1,91 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
-     </head>
-    <body>
-        <nav id="navbar" class="nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="#welcome-section">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <section id="welcome-section" class="welcome-section">
-            <h1>Hi. I'm <span>Robin</span></h1>
-            <h2>Learning to be a <span>web developer</span></h2>
-            <p>with freeCodeCamp</p>
-        </section>
-
-        <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">freeCodeCamp projects</h2>
-
-        <div class="projects-grid">
-            <a href="https://robinpunn.github.io/fcc-tribute/" target="_blank" class="project project-tile">
-            <img class="project-image" src="./images/bitcoin.png" alt="tribute">
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Tribute Page
-                <span class="code">/&gt;</span>
-            </p>
-            </a>
-            <a href="https://robinpunn.github.io/fcc-survey/" target="_blank" class="project project-tile">
-            <img class="project-image" src="./images/survey.png" alt="survey">
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Survey
-                <span class="code">/&gt;</span>
-            </p>
-            </a>
-            <a href="https://robinpunn.github.io/fcc-documentation/" target="_blank" class="project project-tile">
-            <img class="project-image" src="./images/documentation.png" alt="documentation">
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Documentation
-                <span class="code">/&gt;</span>
-            </p>
-            </a>
-            <a href="https://robinpunn.github.io/fcc-landing/" target="_blank" class="project project-tile">
-            <img class="project-image" src="./images/landing.png" alt="landing">
-            <p class="project-title">
-                <span class="code">&lt;</span>
-                Landing Page
-                <span class="code">/&gt;</span>
-            </p>
-            </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <div class="container">
+    <h1 id="title">The Robin Survey<h1>
+      <p id="description">The Most Important Decision of Your Life</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required></div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
         </div>
-
-        <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a>
-        </section>
-
-        <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-            <h2>Contact me</h2>
-            <p>Excited to be a part of your team!</p>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
         </div>
-        <div class="contact-links">
-            <a id="profile-link" href="https://github.com/robinpunn" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/robin-punnoose-251633164" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:robin.punnoose@protonmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send e-mail</a>
+        <div class="form-group">
+          <p>
+            Which option describes your current role?       </p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select Current Role</option>
+            <option value="student">
+              Student
+            </option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+          </select>
         </div>
-        </section>
-
-        <footer>
-        <p>
-            Learning the basics of HTML/CSS with freeCodeCamp
-        </p>
-        <p>
-            © Created for
-            <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
-        </p>
-        </footer>
-
-    </body>
+        <div class="form-group">
+            <p>Would you reccomend me to a friend? </p>
+            <label>
+              <input name="user-reccomend" value="definitely" type="radio" class="input-radio" checked>Definitely
+            </label>
+            <label>
+              <input name="user-reccomend" value="maybe" type="radio" class="input-radio">Maybe
+            </label>
+            <label>
+              <input name="user-reccomend" value="not-sure" type="radio" class="input-radio">Not sure
+            </label>
+         </div>
+        <div class="from-group">
+          <p>What do you like most about me?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an Option</option>
+            <option value="hair">Hair</option>
+            <option value="skin-tone">Skin Tone</option>
+            <option value="approachability">Approachability</option>
+            <option value="loudness">Loudness</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Any special requests?</p>
+          <label>
+            <input name="prefer" value="friend" type="checkbox" class="input-checkbox">Be my friend
+          </label>
+          <label>
+            <input name="prefer" value="advisor" type="checkbox" class="input-checkbox">Be my personal advisor
+          </label>
+          <label>
+            <input name="prefer" value="financial" type="checkbox" class="input-checkbox">Be my financial advisor
+          </label>
+          <label>
+            <input name="prefer" value="life-coach" type="checkbox" class="input-checkbox">Be my life coach
+          </label>
+          <label>
+            <input name="prefer" value="nurse" type="checkbox" class="input-checkbox">Be my nurse
+          </label>
+          <label>
+            <input name="prefer" value="web-dev" type="checkbox" class="input-checkbox">Be my web developer
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </div>
+      </form>
+      </div>
+  </body>
 </html>
