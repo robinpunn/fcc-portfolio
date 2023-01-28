@@ -1,24 +1,24 @@
-# Build a Survey Form
-## Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
+# Build a Product Landing Page
+## Objective: Build an app that is functionally similar to https://product-landing-page.freecodecamp.rocks
 
 ### User Stories:
 
-1. You should have a page title in an h1 element with an id of title<br>
-2. You should have a short explanation in a p element with an id of description<br>
-3. You should have a form element with an id of survey-form<br>
-4. Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text<br>
-5. Inside the form element, you are required to enter your email in an input field that has an id of email<br>
-6. If you enter an email that is not formatted correctly, you will see an HTML5 validation error<br>
-7. Inside the form, you can enter a number in an input field that has an id of number<br>
-8. If you enter non-numbers in the number input, you will see an HTML5 validation error<br>
-9. If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error<br>
-10. For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"<br>
-11. For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field<br>
-12. Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from <br>
-13. Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute<br>
-14. Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute<br>
-15. Inside the form element, you are presented with a textarea for additional comments<br>
-16. Inside the form element, you are presented with a button with id of submit to submit all the inputs<br>
+1. Your product landing page should have a header element with a corresponding id="header"<br>
+2. You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)<br>
+3. Within the #header element, you can see a nav element with a corresponding id="nav-bar"<br>
+4. You can see at least three clickable elements inside the nav element, each with the class nav-link<br>
+5. When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page<br>
+6. You can watch an embedded product video with id="video"<br>
+7. Your landing page has a form element with a corresponding id="form"<br>
+8. Within the form, there is an input field with id="email" where you can enter an email address<br>
+9. The #email input field should have placeholder text to let users know what the field is for<br>
+10. The #email input field uses HTML5 validation to confirm that the entered text is an email address<br>
+11. Within the form, there is a submit input with a corresponding id="submit"<br>
+12. When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) <br>
+13. The navbar should always be at the top of the viewport<br>
+14. Your product landing page should have at least one media query<br>
+15. Your product landing page should utilize CSS flexbox at least once<br>
+
 
 
 
